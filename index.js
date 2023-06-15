@@ -1,14 +1,14 @@
 function buttonSize(options) {
     let buttonSizeLarge = document.querySelectorAll('.buttonSizeLarge');
     let buttonSizeMed = document.querySelectorAll('.buttonSizeMed');
-    let buttonSizeSmall = document.querySelectorAll('.buttonSizeSmall');
+    let buttonSizeSmaller = document.querySelectorAll('.buttonSizeSmaller');
 
     if (options.buttonSizeLarge_type === 'large')
         options.buttonSizeLarge_type = '200px';
     if (options.buttonSizeMed_type === 'medium')
         options.buttonSizeMed_type = '150px';
-    if (options.buttonSizeSmall_type === 'small')
-        options.buttonSizeSmall_type = '100px';
+    if (options.buttonSizeSmaller_type === 'smaller')
+        options.buttonSizeSmaller_type = '100px';
         
     buttonSizeLarge.forEach(buttonSizeLarge => {
         buttonSizeLarge.style.width = `${options.buttonSizeLarge_type}`;
@@ -16,8 +16,8 @@ function buttonSize(options) {
     buttonSizeMed.forEach(buttonSizeMed => {
         buttonSizeMed.style.width = `${options.buttonSizeMed_type}`;
     })
-    buttonSizeSmall.forEach(buttonSizeSmall => {
-        buttonSizeSmall.style.width = `${options.buttonSizeSmall_type}`;
+    buttonSizeSmaller.forEach(buttonSizeSmaller => {
+        buttonSizeSmaller.style.width = `${options.buttonSizeSmaller_type}`;
     })
 }
 
