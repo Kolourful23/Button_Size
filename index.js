@@ -12,12 +12,18 @@ function buttonSize(options) {
         
     buttonSizeLarge.forEach(buttonSizeLarge => {
         buttonSizeLarge.style.width = `${options.buttonSizeLarge_type}`;
+        buttonSizeLarge.style.height = `${options.buttonSizeLarge_type}`;
+        buttonSizeLarge.style.fontSize = "x-large";
     })
     buttonSizeMed.forEach(buttonSizeMed => {
         buttonSizeMed.style.width = `${options.buttonSizeMed_type}`;
+        buttonSizeMed.style.height = `${options.buttonSizeMed_type}`;
+        buttonSizeMed.style.fontSize = "large";
     })
     buttonSizeSmall.forEach(buttonSizeSmall => {
         buttonSizeSmall.style.width = `${options.buttonSizeSmall_type}`;
+        buttonSizeSmall.style.height = `${options.buttonSizeSmall_type}`;
+        buttonSizeSmall.style.fontSize = "small";
     })
 }
 
