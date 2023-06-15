@@ -4,7 +4,7 @@ function buttonSize(options) {
     let buttonSizeSmall = document.querySelectorAll('.buttonSizeSmall');
 
     if (options.buttonSizeLarge_type === 'large')
-        options.buttonSizeLarge_type = '200px';
+        options.buttonSizeLarge_type = '600px';
     if (options.buttonSizeMed_type === 'medium')
         options.buttonSizeMed_type = '150px';
     if (options.buttonSizeSmall_type === 'smaller')
