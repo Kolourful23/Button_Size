@@ -5,9 +5,9 @@ function buttonSize(options) {
 
     if (options.buttonSizeLarge_type === 'large')
         options.buttonSizeLarge_type = '200px';
-    else if (options.buttonSizeMed_type === 'medium')
+    if (options.buttonSizeMed_type === 'medium')
         options.buttonSizeMed_type = '150px';
-    else if (options.buttonSizeSmall_type === 'small')
+    if (options.buttonSizeSmall_type === 'small')
         options.buttonSizeSmall_type = '50px';
         
     buttonSizeLarge.forEach(buttonSizeLarge => {
