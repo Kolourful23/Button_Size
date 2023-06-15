@@ -1,13 +1,22 @@
 function buttonSize(options) {
-    let buttonSize = document.querySelectorAll('.buttonSize');
+    let buttonSizeLarge = document.querySelectorAll('.buttonSizeLarge');
+    let buttonSizeMed = document.querySelectorAll('.buttonSizeMed');
+    let buttonSizeSmall = document.querySelectorAll('.buttonSizeSmall');
 
-    if (options.buttonSize_type === 'large')
-        options.buttonSize_type = '200px';
-    else if(options.buttonSize_type === 'medium')
-        options.buttonSize_type = '150px';
-    else options.buttonSize_type = '50px';
-    buttonSize.forEach(buttonSize => {
-        buttonSize.style.width = `${options.buttonSize_type}`;
+    if (options.buttonSizeLarge_type === 'large')
+        options.buttonSizeLarge_type = '200px';
+    else if (options.buttonSizeMed_type === 'medium')
+        options.buttonSizeMed_type = '150px';
+    else if (options.buttonSizeSmall_type === 'small')
+        options.buttonSizeSmall_type = '50px';
+    buttonSizeLarge.forEach(buttonSizeLarge => {
+        buttonSizeLarge.style.width = `${options.buttonSizeLarge_type}`;
+    })
+    buttonSizeMed.forEach(buttonSizeMed => {
+        buttonSizeMed.style.width = `${options.buttonSizeMed_type}`;
+    })
+    buttonSizeSmall.forEach(buttonSizeSmall => {
+        buttonSizeSmall.style.width = `${options.buttonSizeSmall_type}`;
     })
 }
 
