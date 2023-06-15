@@ -8,7 +8,7 @@ function buttonSize(options) {
     if (options.buttonSizeMed_type === 'medium')
         options.buttonSizeMed_type = '150px';
     if (options.buttonSizeSmall_type === 'small')
-        options.buttonSizeSmall_type = '50px';
+        options.buttonSizeSmall_type = '100px';
         
     buttonSizeLarge.forEach(buttonSizeLarge => {
         buttonSizeLarge.style.width = `${options.buttonSizeLarge_type}`;
